@@ -42,6 +42,7 @@ classes, everything.
 - php composer version 2.6.6 2023-12-08
 
 ### Coding Rules
+- [My PHP Standards](./php_coding_standards.md)
 - PHP Standards Recommendations PSR-12
 - Use Spatie Laravel Data for DTOs
 - Use Lorisleiva Actions for Action Classes
@@ -54,9 +55,10 @@ classes, everything.
 - Avoid sql injections, always use query bindings or Eloquent ORM and sanitize inputs.
 - Always take in consideration all the rules about code cognitive complexity.
 - A function can not alter the value of a variable out of its scope
-- A function can not have more then two if statements
+- A function can not have more then three if statements
 - A function can not have more then one return
 - A function can not have more then 3 parameters, if so, create a data transfer object
+- Do not create shallow functions, for example, do not create a function to do only one db query.
 - A class can not have more then 20 methods
 - A class can not have more then 200 lines of code
 - Every code suggestion must be easy for humans to understand and junior developers to maintain.
